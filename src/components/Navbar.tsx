@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useRef } from "react";
+import { useState } from "react";
 import { ServiceAreasDataRecord } from "@/data/siteData";
 
 export default function Navbar() {
@@ -18,19 +18,34 @@ export default function Navbar() {
 
   const services = [
     {
-      slug: "opener-installation-repair",
-      title: "Opener Installation & Repair",
-      desc: "Smart Wi-Fi, belt drive & diagnostic repairs",
+      slug: "garage-door-installation",
+      title: "Garage Door Installation",
+      desc: "Insulated steel, modern flush & carriage house",
     },
     {
-      slug: "service-maintenance",
-      title: "Service & Maintenance",
-      desc: "25-point tune-up, spring balancing & nylon rollers",
+      slug: "garage-door-replacement",
+      title: "Garage Door Replacement",
+      desc: "Complete tear-down & old door haul-away",
     },
     {
-      slug: "installation-replacement",
-      title: "Installation & Replacement",
-      desc: "Insulated steel, modern flush & full-view doors",
+      slug: "repair-maintenance",
+      title: "Repair & Maintenance",
+      desc: "Spring rebalancing & 25-point tune-ups",
+    },
+    {
+      slug: "roller-replacement",
+      title: "Roller Replacement",
+      desc: "Whisper-quiet sealed nylon roller upgrades",
+    },
+    {
+      slug: "garage-door-inspections",
+      title: "Garage Door Inspections",
+      desc: "Detailed 25-point safety inspection & written audit",
+    },
+    {
+      slug: "cable-replacement",
+      title: "Cable Replacement",
+      desc: "Heavy-duty aircraft-grade cable replacement",
     },
   ];
 
@@ -44,7 +59,7 @@ export default function Navbar() {
           <div className="relative w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 shrink-0 group-hover:scale-105 transition-transform">
             <Image
               src="/logo.PNG"
-              alt="Level Up Garage Services Logo"
+              alt="Level Up Garage Door Service Logo"
               fill
               className="object-contain"
               priority
@@ -55,7 +70,7 @@ export default function Navbar() {
               Level Up
             </span>
             <span className="text-[10px] sm:text-xs md:text-sm font-extrabold tracking-[0.18em] uppercase text-slate-200 mt-0.5 sm:mt-1 drop-shadow-sm">
-              GARAGE SERVICES
+              GARAGE DOOR SERVICE
             </span>
           </div>
         </Link>
@@ -89,7 +104,7 @@ export default function Navbar() {
 
             {/* Services Floating Card */}
             {servicesDropdownOpen && (
-              <div className="absolute top-full left-0 mt-1 w-80 bg-[#12161f]/95 backdrop-blur-2xl border border-white/15 rounded-2xl shadow-2xl p-2.5 z-50 text-white animate-fadeIn">
+              <div className="absolute top-full left-0 mt-1 w-88 bg-[#12161f]/95 backdrop-blur-2xl border border-white/15 rounded-2xl shadow-2xl p-2.5 z-50 text-white animate-fadeIn max-h-[85vh] overflow-y-auto">
                 <div className="text-[10px] font-bold tracking-widest text-slate-400 uppercase px-3 py-1.5 border-b border-white/10 mb-1">
                   Our Services
                 </div>
@@ -98,7 +113,7 @@ export default function Navbar() {
                     key={item.slug}
                     href={`/services/${item.slug}`}
                     onClick={() => setServicesDropdownOpen(false)}
-                    className="block p-3 rounded-xl hover:bg-white/10 transition-colors"
+                    className="block p-2.5 rounded-xl hover:bg-white/10 transition-colors"
                   >
                     <div className="font-bold text-sm text-white">{item.title}</div>
                     <div className="text-xs text-slate-300 mt-0.5">{item.desc}</div>

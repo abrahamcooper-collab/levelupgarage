@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ServiceAreasDataRecord } from "@/data/siteData";
+import { ServiceAreasDataRecord, ServicesDataRecord } from "@/data/siteData";
 
 export default function Footer() {
+  const servicesList = Object.values(ServicesDataRecord.services);
   const cities = ServiceAreasDataRecord.citiesList.slice(0, 10);
 
   return (
@@ -15,7 +16,7 @@ export default function Footer() {
               <div className="relative w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 shrink-0 group-hover:scale-105 transition-transform">
                 <Image
                   src="/logo.PNG"
-                  alt="Level Up Garage Services Logo"
+                  alt="Level Up Garage Door Service Logo"
                   fill
                   className="object-contain"
                 />
@@ -25,7 +26,7 @@ export default function Footer() {
                   Level Up
                 </span>
                 <span className="text-[10px] sm:text-xs font-extrabold text-slate-300 uppercase tracking-[0.2em] mt-1">
-                  GARAGE SERVICES
+                  GARAGE DOOR SERVICE
                 </span>
               </div>
             </Link>
@@ -63,32 +64,19 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Col 2: Services Links */}
+          {/* Col 2: Services Links (All 6 Services) */}
           <div className="lg:col-span-3">
             <span className="block text-[11px] font-bold tracking-[0.15em] text-slate-400 uppercase mb-4">
               SERVICES
             </span>
-            <ul className="space-y-3 text-xs text-slate-300">
-              <li>
-                <Link href="/services/opener-installation-repair" className="hover:text-white transition-colors">
-                  Garage Door Opener Installation &amp; Repair
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/service-maintenance" className="hover:text-white transition-colors">
-                  Garage Door Service &amp; Maintenance
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/installation-replacement" className="hover:text-white transition-colors">
-                  Garage Door Installation &amp; Replacement
-                </Link>
-              </li>
-              <li>
-                <Link href="/#work" className="hover:text-white transition-colors">
-                  Recent projects &amp; case studies
-                </Link>
-              </li>
+            <ul className="space-y-2.5 text-xs text-slate-300">
+              {servicesList.map((service) => (
+                <li key={service.slug}>
+                  <Link href={`/services/${service.slug}`} className="hover:text-white transition-colors">
+                    {service.title}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -153,7 +141,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 text-center sm:text-left">
           <div>
-            © 2026 Level Up Garage Services. Licensed &amp; insured. All rights reserved.
+            © 2026 Level Up Garage Door Service. Licensed &amp; insured. All rights reserved.
           </div>
           <div className="flex items-center gap-6">
             <Link href="#" className="hover:text-slate-300 transition-colors">

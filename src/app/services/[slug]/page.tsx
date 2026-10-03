@@ -8,9 +8,12 @@ import { ServicesDataRecord } from "@/data/siteData";
 
 export async function generateStaticParams() {
   return [
-    { slug: "opener-installation-repair" },
-    { slug: "service-maintenance" },
-    { slug: "installation-replacement" },
+    { slug: "garage-door-installation" },
+    { slug: "garage-door-replacement" },
+    { slug: "repair-maintenance" },
+    { slug: "roller-replacement" },
+    { slug: "garage-door-inspections" },
+    { slug: "cable-replacement" },
   ];
 }
 
@@ -95,7 +98,7 @@ export default async function ServicePage({ params }: PageProps) {
                   WHAT IS INCLUDED
                 </span>
                 <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mt-2 mb-4">
-                  Professional service engineered for safety & longevity.
+                  Professional service engineered for safety &amp; longevity.
                 </h2>
                 <p className="text-slate-600 text-base sm:text-lg leading-relaxed mb-6">
                   {service.description}

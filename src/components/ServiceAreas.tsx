@@ -50,7 +50,7 @@ export default function ServiceAreas() {
               {/* Real Interactive Google Map Embed */}
               <iframe
                 title="Northwest Georgia Service Map"
-                src="https://maps.google.com/maps?q=Calhoun%2C%20GA%2030701&t=&z=9&ie=UTF8&iwloc=&output=embed"
+                src="https://maps.google.com/maps?q=Dallas%2C%20GA%2030157&t=&z=10&ie=UTF8&iwloc=&output=embed"
                 className="w-full h-full border-0 relative z-0"
                 allowFullScreen
                 loading="lazy"

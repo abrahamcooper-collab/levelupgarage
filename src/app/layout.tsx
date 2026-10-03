@@ -9,7 +9,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Level Up Garage Services | Garage Door Repair & Installation in Northwest Georgia",
+  title: "Level Up Garage Door Service | Garage Door Repair & Installation in Northwest Georgia",
   description: "Premium garage door opener repair, maintenance, and installation across Northwest Georgia. Same-day service, upfront pricing, licensed & insured. Call (770) 343-3361.",
   icons: {
     icon: "/logo.PNG",
