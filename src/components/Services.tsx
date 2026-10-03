@@ -4,6 +4,7 @@ import Link from "next/link";
 export default function Services() {
   const services = [
     {
+      slug: "opener-installation-repair",
       title: "Garage Door Opener Installation & Repair",
       description:
         "Belt-drive and smart Wi-Fi openers installed, calibrated, and safety-tested the same day. We diagnose logic boards, travel limits, safety sensors, and worn drives instead of guessing.",
@@ -21,6 +22,7 @@ export default function Services() {
       ),
     },
     {
+      slug: "service-maintenance",
       title: "Garage Door Service & Maintenance",
       description:
         "A 25-point precision tune-up: springs balanced, rollers and hinges serviced, cables inspected, tracks aligned, and hardware torqued to spec so your door runs silent and safe year-round.",
@@ -39,6 +41,7 @@ export default function Services() {
       ),
     },
     {
+      slug: "installation-replacement",
       title: "Garage Door Installation & Replacement",
       description:
         "Insulated steel, flush modern, carriage house, and full-view glass doors — measured, installed, and finished to a showroom standard with clean job sites and a written warranty.",
@@ -99,7 +102,9 @@ export default function Services() {
               <div className="p-6 sm:p-7 flex flex-col flex-grow">
                 {/* Title */}
                 <h3 className="text-lg font-bold text-slate-900 mb-3 leading-snug">
-                  {service.title}
+                  <Link href={`/services/${service.slug}`} className="hover:text-slate-600 transition-colors">
+                    {service.title}
+                  </Link>
                 </h3>
 
                 {/* Description */}
@@ -119,12 +124,12 @@ export default function Services() {
                   ))}
                 </ul>
 
-                {/* Learn More Link */}
+                {/* Dedicated Page Link */}
                 <Link
-                  href="#contact"
+                  href={`/services/${service.slug}`}
                   className="inline-flex items-center gap-2 text-sm font-bold text-slate-900 hover:text-slate-600 transition-colors group mt-auto"
                 >
-                  <span>Learn more</span>
+                  <span>Explore service details</span>
                   <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>

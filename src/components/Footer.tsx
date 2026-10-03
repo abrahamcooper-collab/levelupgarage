@@ -1,7 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
+import { ServiceAreasDataRecord } from "@/data/siteData";
 
 export default function Footer() {
+  const cities = ServiceAreasDataRecord.citiesList.slice(0, 10);
+
   return (
     <footer className="w-full bg-[#0e1217] border-t border-white/10 text-white pt-16 pb-12 px-5 sm:px-8">
       <div className="max-w-7xl mx-auto">
@@ -67,23 +70,23 @@ export default function Footer() {
             </span>
             <ul className="space-y-3 text-xs text-slate-300">
               <li>
-                <Link href="#services" className="hover:text-white transition-colors">
+                <Link href="/services/opener-installation-repair" className="hover:text-white transition-colors">
                   Garage Door Opener Installation &amp; Repair
                 </Link>
               </li>
               <li>
-                <Link href="#services" className="hover:text-white transition-colors">
+                <Link href="/services/service-maintenance" className="hover:text-white transition-colors">
                   Garage Door Service &amp; Maintenance
                 </Link>
               </li>
               <li>
-                <Link href="#services" className="hover:text-white transition-colors">
+                <Link href="/services/installation-replacement" className="hover:text-white transition-colors">
                   Garage Door Installation &amp; Replacement
                 </Link>
               </li>
               <li>
-                <Link href="#work" className="hover:text-white transition-colors">
-                  Recent projects
+                <Link href="/#work" className="hover:text-white transition-colors">
+                  Recent projects &amp; case studies
                 </Link>
               </li>
             </ul>
@@ -95,18 +98,13 @@ export default function Footer() {
               SERVICE AREAS
             </span>
             <div className="grid grid-cols-2 gap-x-3 gap-y-2 text-xs text-slate-300 mb-3">
-              <span>Dalton, GA</span>
-              <span>Calhoun, GA</span>
-              <span>Rome, GA</span>
-              <span>Cartersville, GA</span>
-              <span>Chatsworth, GA</span>
-              <span>Ringgold, GA</span>
-              <span>Fort Oglethorpe, GA</span>
-              <span>LaFayette, GA</span>
-              <span>Adairsville, GA</span>
-              <span>Rockmart, GA</span>
+              {cities.map((city, idx) => (
+                <Link key={idx} href={`/service-areas/${city.slug}`} className="hover:text-white transition-colors">
+                  {city.name}
+                </Link>
+              ))}
             </div>
-            <Link href="#areas" className="text-xs font-bold text-slate-400 hover:text-white underline transition-colors">
+            <Link href="/#areas" className="text-xs font-bold text-slate-400 hover:text-white underline transition-colors">
               See full coverage
             </Link>
           </div>
