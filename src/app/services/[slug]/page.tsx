@@ -7,14 +7,9 @@ import Estimator from "@/components/Estimator";
 import { ServicesDataRecord } from "@/data/siteData";
 
 export async function generateStaticParams() {
-  return [
-    { slug: "garage-door-installation" },
-    { slug: "garage-door-replacement" },
-    { slug: "repair-maintenance" },
-    { slug: "roller-replacement" },
-    { slug: "garage-door-inspections" },
-    { slug: "cable-replacement" },
-  ];
+  return Object.keys(ServicesDataRecord.services).map((slug) => ({
+    slug,
+  }));
 }
 
 interface PageProps {

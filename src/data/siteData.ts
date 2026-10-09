@@ -91,7 +91,7 @@ export class ServicesDataRecord {
       slug: "repair-maintenance",
       title: "Repair & Maintenance",
       tagline: "Fast diagnostic repairs, spring rebalancing & 25-point tune-ups for silent operation.",
-      image: "/service-maintenance.png",
+      image: "/service-repair-new.png",
       description:
         "From squeaking hinges and sticking tracks to broken springs and off-track doors, our experienced technicians diagnose and repair your garage door issues fast.",
       overview:
@@ -120,7 +120,7 @@ export class ServicesDataRecord {
       slug: "roller-replacement",
       title: "Roller Replacement",
       tagline: "Eliminate up to 70% of garage door noise with heavy-duty sealed nylon roller upgrades.",
-      image: "/service-opener.png",
+      image: "/service-maintenance.png",
       description:
         "Old metal rollers squeak, grind, pop, and wear down door tracks over time. Upgrade to sealed ball-bearing nylon rollers for whisper-quiet, smooth door operation.",
       overview:
@@ -174,31 +174,31 @@ export class ServicesDataRecord {
       ],
     },
 
-    "cable-replacement": {
-      slug: "cable-replacement",
-      title: "Cable Replacement",
-      tagline: "Heavy-duty aircraft-grade cable replacement for frayed, snapped, or thrown cables.",
-      image: "/before-door.png",
+    "garage-door-opener-installation": {
+      slug: "garage-door-opener-installation",
+      title: "Garage Door Opener Installation",
+      tagline: "Quiet, smart, heavy-duty belt & chain drive garage door opener installations.",
+      image: "/service-opener.png",
       description:
-        "Garage door cables hold extreme tension to lift your heavy door safely. Snapped, frayed, or off-spool cables can cause dangerous door tilting and track jamming.",
+        "Professional installation and replacement of smart Wi-Fi garage door openers, quiet belt drives, and heavy-duty chain drives with battery backup.",
       overview:
-        "We replace worn cables with commercial-grade, galvanized steel cables designed for high tension and rust resistance. We reset cable drums, re-level the door, and adjust spring tension so your door opens straight and smooth.",
+        "We install top-rated LiftMaster, Chamberlain, and Genie openers equipped with smartphone control, soft start/stop motors, integrated LED illumination, auto-locks, and safety reverse sensors.",
       highlights: [
-        "High-tensile galvanized steel aircraft-grade cable replacement",
-        "Re-leveling tilted or off-track garage doors",
-        "Cable drum reset & shaft alignment",
-        "Torsion spring balance verification",
-        "Same-day emergency response for thrown cables",
+        "Whisper-quiet belt drive & high-torque chain drive models",
+        "Smart myQ / Wi-Fi smartphone remote operation",
+        "Battery backup for power outage security",
+        "Safety beam sensor installation & calibration",
+        "Includes wireless wall console & 2 remote keyfobs",
       ],
-      pricingNote: "Upfront flat-rate cable replacement pricing.",
+      pricingNote: "Flat-rate opener installation with transparent upfront pricing.",
       faqs: [
         {
-          q: "Can I replace garage door cables myself?",
-          a: "We strongly advise against DIY cable repair because cables are under high tension from the torsion spring system. Professional tools and safety procedures are required.",
+          q: "How long does a garage door opener installation take?",
+          a: "Standard installation of a new garage door opener takes approximately 1.5 to 2.5 hours.",
         },
         {
-          q: "Why did my garage door cable come off the drum?",
-          a: "Cables usually come off drums when a spring loses tension, a roller pops off track, or the door hits an obstruction while closing.",
+          q: "Can I control my new garage door opener from my smartphone?",
+          a: "Yes! All modern openers we install feature built-in Wi-Fi and smartphone app compatibility.",
         },
       ],
     },
@@ -214,6 +214,8 @@ export class ServiceAreasDataRecord {
     { slug: "hiram-ga", name: "Hiram, GA" },
     { slug: "cartersville-ga", name: "Cartersville, GA" },
     { slug: "smyrna-ga", name: "Smyrna, GA" },
+    { slug: "woodstock-ga", name: "Woodstock, GA" },
+    { slug: "mableton-ga", name: "Mableton, GA" },
   ];
 
   static getArea(slug: string): ServiceAreaData {
@@ -231,7 +233,7 @@ export class ServiceAreasDataRecord {
       zipCodes: ["30701", "30720", "30161", "30120", "30705"],
       popularServices: [
         "Emergency Torsion Spring Replacement",
-        "Garage Door Cable & Roller Replacement",
+        "Garage Door Opener Installation",
         "25-Point Precision Maintenance & Inspection",
         "Insulated Steel Door Installation",
       ],

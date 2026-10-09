@@ -43,35 +43,27 @@ export default function Navbar() {
       desc: "Detailed 25-point safety inspection & written audit",
     },
     {
-      slug: "cable-replacement",
-      title: "Cable Replacement",
-      desc: "Heavy-duty aircraft-grade cable replacement",
+      slug: "garage-door-opener-installation",
+      title: "Garage Door Opener Installation",
+      desc: "Quiet, smart belt & chain drive opener installation",
     },
   ];
 
   const cities = ServiceAreasDataRecord.citiesList;
 
   return (
-    <header className="absolute top-0 left-0 w-full z-50 px-4 sm:px-8 py-3 sm:py-5">
+    <header className="absolute top-0 left-0 w-full z-50 px-4 sm:px-8 py-2 sm:py-3">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        {/* Brand Logo & Prominent Business Name */}
-        <Link href="/" className="flex items-center gap-2.5 sm:gap-4 group z-50">
-          <div className="relative w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 shrink-0 group-hover:scale-105 transition-transform">
+        {/* Brand Logo (Enlarged, Business Name Moved to Hero) */}
+        <Link href="/" className="flex items-center group z-50">
+          <div className="relative w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-36 lg:h-36 shrink-0 group-hover:scale-105 transition-transform">
             <Image
               src="/logo.PNG"
               alt="Level Up Garage Door Service Logo"
               fill
-              className="object-contain"
+              className="object-contain drop-shadow-lg"
               priority
             />
-          </div>
-          <div className="flex flex-col">
-            <span className="text-lg sm:text-2xl md:text-3xl font-extrabold text-white leading-none tracking-tight drop-shadow-md">
-              Level Up
-            </span>
-            <span className="text-[10px] sm:text-xs md:text-sm font-extrabold tracking-[0.18em] uppercase text-slate-200 mt-0.5 sm:mt-1 drop-shadow-sm">
-              GARAGE DOOR SERVICE
-            </span>
           </div>
         </Link>
 

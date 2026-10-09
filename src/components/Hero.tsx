@@ -30,16 +30,18 @@ export default function Hero() {
           </span>
         </div>
 
-        {/* Heading */}
-        <h1 className="text-[clamp(2.125rem,5.5vw,4.75rem)] font-extrabold leading-[1.08] tracking-tight text-white max-w-[820px] drop-shadow-2xl">
-          The garage door<br />
-          people your<br />
-          neighbors actually<br />
-          recommend.
+        {/* Main Bigger Hero Text: Business Name */}
+        <h1 className="text-[clamp(2.5rem,5.8vw,5.25rem)] font-extrabold leading-[1.05] tracking-tight text-white max-w-[920px] drop-shadow-2xl">
+          Level Up Garage Door Service
         </h1>
 
+        {/* Secondary Hero Tagline (Smaller main hero text) */}
+        <h2 className="text-[clamp(1.25rem,2.8vw,2.25rem)] font-bold leading-[1.2] text-slate-200 max-w-[780px] drop-shadow-lg mt-4 sm:mt-5">
+          The garage door people your neighbors actually recommend.
+        </h2>
+
         {/* Subtitle */}
-        <p className="text-[clamp(0.9375rem,1.2vw,1.1875rem)] leading-relaxed text-slate-300 max-w-[620px] mt-5 sm:mt-6 font-medium">
+        <p className="text-[clamp(0.9375rem,1.1vw,1.125rem)] leading-relaxed text-slate-300 max-w-[640px] mt-4 sm:mt-5 font-medium">
           Openers, springs, tune-ups, and full door replacements — diagnosed properly, priced upfront, and finished the same day whenever we can.
         </p>
 
