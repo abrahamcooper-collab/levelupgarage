@@ -6,8 +6,8 @@ export default function Hero() {
     <section className="relative min-h-screen w-full flex flex-col justify-between overflow-hidden">
       {/* Background Image */}
       <Image
-        src="/hero-bg.png"
-        alt="Luxury home with modern garage door at twilight"
+        src="/level up garage door bg picture.jfif"
+        alt="Level Up Garage Door Service residential home"
         fill
         priority
         className="object-cover object-center"
