@@ -50,7 +50,7 @@ export default function Transformation() {
             <div className="relative rounded-3xl overflow-hidden border border-slate-200 shadow-2xl aspect-[4/3] select-none bg-slate-100">
               {/* After Image (Background) */}
               <Image
-                src="/after-door.png"
+                src="/after-door.webp"
                 alt="After: Modern flush insulated garage door"
                 fill
                 className="object-cover"
@@ -63,7 +63,7 @@ export default function Transformation() {
                 style={{ clipPath: `inset(0 ${100 - sliderPos}% 0 0)` }}
               >
                 <Image
-                  src="/before-door.png"
+                  src="/before-door.webp"
                   alt="Before: Old rusted garage door"
                   fill
                   className="object-cover"

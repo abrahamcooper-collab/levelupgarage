@@ -15,7 +15,7 @@ export default function Footer() {
             <Link href="/" className="inline-flex items-center gap-3.5 sm:gap-4 mb-6 group">
               <div className="relative w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 shrink-0 group-hover:scale-105 transition-transform">
                 <Image
-                  src="/logo.PNG"
+                  src="/logo.webp"
                   alt="Level Up Garage Door Service Logo"
                   fill
                   className="object-contain"

@@ -29,7 +29,7 @@ export class ServicesDataRecord {
       slug: "garage-door-installation",
       title: "Garage Door Installation",
       tagline: "Professional installation of insulated steel, modern flush & carriage house garage doors.",
-      image: "/service-install.png",
+      image: "/service-install.webp",
       description:
         "Expert garage door installation for new construction, detached garages, and home renovations across Northwest Georgia. Measured, fitted, and safety-tested to showroom standards.",
       overview:
@@ -62,7 +62,7 @@ export class ServicesDataRecord {
       slug: "garage-door-replacement",
       title: "Garage Door Replacement",
       tagline: "Upgrade worn, dented, or rusted doors in a single day with old door haul-away included.",
-      image: "/after-door.png",
+      image: "/after-door.webp",
       description:
         "Replace sagging, rusted, or uninsulated raised-panel doors with modern, energy-efficient garage doors. Instant curb appeal boost with same-day tear-down and installation.",
       overview:
@@ -91,7 +91,7 @@ export class ServicesDataRecord {
       slug: "repair-maintenance",
       title: "Repair & Maintenance",
       tagline: "Fast diagnostic repairs, spring rebalancing & 25-point tune-ups for silent operation.",
-      image: "/service-repair-new.png",
+      image: "/service-repair-new.webp",
       description:
         "From squeaking hinges and sticking tracks to broken springs and off-track doors, our experienced technicians diagnose and repair your garage door issues fast.",
       overview:
@@ -120,7 +120,7 @@ export class ServicesDataRecord {
       slug: "roller-replacement",
       title: "Roller Replacement",
       tagline: "Eliminate up to 70% of garage door noise with heavy-duty sealed nylon roller upgrades.",
-      image: "/service-maintenance.png",
+      image: "/service-maintenance.webp",
       description:
         "Old metal rollers squeak, grind, pop, and wear down door tracks over time. Upgrade to sealed ball-bearing nylon rollers for whisper-quiet, smooth door operation.",
       overview:
@@ -149,7 +149,7 @@ export class ServicesDataRecord {
       slug: "garage-door-inspections",
       title: "Garage Door Inspections",
       tagline: "Detailed 25-point safety inspection & written status report for homeowners & buyers.",
-      image: "/hero-bg.png",
+      image: "/hero-bg-new.jpg",
       description:
         "Ensure your garage door is safe, balanced, and compliant. Ideal for annual home maintenance, pre-purchase home inspections, or post-storm safety checks.",
       overview:
@@ -178,7 +178,7 @@ export class ServicesDataRecord {
       slug: "garage-door-opener-installation",
       title: "Garage Door Opener Installation",
       tagline: "Quiet, smart, heavy-duty belt & chain drive garage door opener installations.",
-      image: "/service-opener.png",
+      image: "/service-opener.webp",
       description:
         "Professional installation and replacement of smart Wi-Fi garage door openers, quiet belt drives, and heavy-duty chain drives with battery backup.",
       overview:

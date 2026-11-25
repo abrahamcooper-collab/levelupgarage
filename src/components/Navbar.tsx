@@ -58,7 +58,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center group z-50">
           <div className="relative w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-36 lg:h-36 shrink-0 group-hover:scale-105 transition-transform">
             <Image
-              src="/logo.PNG"
+              src="/logo.webp"
               alt="Level Up Garage Door Service Logo"
               fill
               className="object-contain drop-shadow-lg"
